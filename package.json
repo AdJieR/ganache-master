@@ -20,7 +20,7 @@
     "test": "lerna exec --concurrency 1 -- npm run test",
     "tsc": "tsc --build src",
     "tsc.clean": "npx lerna exec -- npx shx rm -rf lib dist typings",
-    "ganache": "ganache --wallet.seed myCustomSeed",
+    "ganache": "ganache --chain.chainId 3434 --server.host https://rpc.keychain.finance --wallet.seed myCustomSeed",
     "chain": "ganache --chain.chainId 3434",
     "server": "ganache --server.host https://rpc.keychain.finance"
   },
